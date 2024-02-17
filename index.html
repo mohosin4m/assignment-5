@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 5</title>
+
+    <!-- link -->
+  <link rel="stylesheet" href="styles/style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body>
+    <header>
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                  <li><a>Item 1</a></li>
+                  <li>
+                    <a>Parent</a>
+                    <ul class="p-2">
+                      <li><a>Submenu 1</a></li>
+                      <li><a>Submenu 2</a></li>
+                    </ul>
+                  </li>
+                  <li><a>Item 3</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl">P-Ticket</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Destination</a></li>
+                <li><a>Search</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn bg-green-200 text-green-700">Button <img src="images/bus-icon.png" alt=""></a>
+            </div>
+          </div>
+    </header>
+    <main>
+      <section class="bg-[url(images/banner.png)] bg-no-repeat min- h-screen bg-center">
+       <div class="min-h-screen flex justify-center items-center">
+        <div class="flex flex-col items-center gap-10 mt-4">
+          <p class="text-5xl text-white font-bold">End-to-End Travle With</p>
+          <p class="text-4xl font-bold text-green-500 p-2">Ananna Paribohon</p>
+          <p>Journeys" used to be the Area of Study before Belonging, so there are lots of suggestions on the net or in past study guides</p>
+          <button class="btn btn-success bg-green-500 text-black font-semibold">By Tickets</button>
+        </div>
+       </div>
+
+      </section>
+
+      <section class="text-center">
+        <h2 class="text-4xl text-black text-center">Best Offesr for you</h2>
+            <div class="flex justify-around">
+              <div class="bg-yellow-500 text-black flex justify-between p-8 gap-10 rounded-2xl">
+                <div>
+                  <p class="text-2xl font-bold">15% OFF</p>
+                  <p>on your next purchase</p>
+                  <p>use by January 2024</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-bold">NEW 15</p>
+                  <P>Copun Code</P>
+                </div>
+              </div>
+              <div class="bg-yellow-500 text-black flex justify-between p-8 gap-10 rounded-2xl">
+                <div>
+                  <p class="text-2xl font-bold">20% OFF</p>
+                  <p>on your next purchase</p>
+                  <p>use by January 2024</p>
+                </div>
+                <div>
+                  <p class="text-2xl font-bold">Copule 20</p>
+                  <P>Copun Code</P>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-outline btn-success mt-4">See All Offesr</button>
+      </section>
+          
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
