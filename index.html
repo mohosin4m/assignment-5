@@ -13,6 +13,7 @@
 
 </head>
 <body>
+
     <header>
         <div class="navbar bg-base-100">
             <div class="navbar-start">
@@ -43,23 +44,26 @@
               </ul>
             </div>
             <div class="navbar-end">
-              <a class="btn bg-green-200 text-green-700">Button <img src="images/bus-icon.png" alt=""></a>
+              <a class="btn bg-green-200 text-green-700">Bus<img src="images/bus-icon.png" alt=""></a>
             </div>
           </div>
     </header>
+
     <main>
-      <section class="bg-[url(images/banner.png)] bg-no-repeat min- h-screen bg-center">
+
+      <!-- BUS SECTION -->
+      <section id="ananna-seat" class="bg-[url(images/banner.png)] bg-no-repeat min- h-screen bg-center">
        <div class="min-h-screen flex justify-center items-center">
         <div class="flex flex-col items-center gap-10 mt-4">
           <p class="text-5xl text-white font-bold">End-to-End Travle With</p>
           <p class="text-4xl font-bold text-green-500 p-2">Ananna Paribohon</p>
           <p class="text-white">Journeys" used to be the Area of Study before Belonging, so there <br> are lots  of suggestions on the net or in past study guides</p>
-          <button class="btn btn-success bg-green-500 text-black font-semibold">By Tickets</button>
+          <button onclick="buyTickets()" class="btn btn-success bg-green-500 text-black font-semibold">Buy Tickets</button>
         </div>
        </div>
-
       </section>
 
+      <!-- CUPONE SECTION -->
       <section class="text-center mt-8">
         <h2 class="text-4xl text-black text-center font-bold">Best Offesr for you</h2>
             <div class="flex justify-around mt-8">
@@ -90,13 +94,12 @@
       </section>
 
 
-      <section class="m-20 bg-slate-100">
-
+        <!-- ANANNA PARIBAHAN SECTION -->
+      <section id="ananna-ground"  class=" m-20 bg-slate-100 seat">
         <div class="text-center">
           <h1 class="text-3xl font-bold">Ananna Paribahan</h1>
-          <p class="pt-4 px-96">Riders can text the bus stop number to 31100 to get updated schedule times of the next six buses arriving at that location.</p>
+          <p class="pt-4 px-96">Riders can text the bus stop number to 31100 to get updated schedule times location.</p>
         </div>
-
             <div class="text-center">
               <div class="stats mt-6">
   
@@ -112,7 +115,7 @@
                     <div>
                       <div class="flex bg-green-200 rounded p-2">
                         <img src="images/seat-green.png" alt="">
-                        <p>40 Seats left</p>
+                        <h3><span id="seat">28</span> Seats left</h3>
                       </div>
                     </div>
                   </div>
@@ -145,158 +148,202 @@
                 </div> 
               </div>
             </div>
-      </section>
 
-
-      <section class="m-20 ">
-                  <div class="flex justify-between bg-white">
-                    <!-- seat selaction -->
-
-
-                    <!-- selected seat -->
-                    <div>
-                          <h2>Select Your Seat</h2>
-                        <hr>
-                      <div class="flex justify-between">
+      <!-- SET SELECTION SECTION -->
+                  <div>
+                    <div class="flex justify-between bg-white">
+                      <div>
+                            <h2>Select Your Seat</h2>
+                          <hr>
+                        <div class="flex justify-between">
+                      <div class="flex">
+                      <img src="images/seat-gray.png" alt="">
+                      <p>Available</p>
+                      </div>
                     <div class="flex">
-                    <img src="images/seat-gray.png" alt="">
-                    <p>Available</p>
+                  <img src="images/seat-green-filled.png" alt="">
+                  <p class="text-green-500">Selected</p>
+                </div>
+                </div>
+  
+                <div class="grid grid-cols-5 gap-x-10 gap-y-8 mt-8">
+                    <div>
+                      <button class="btn">A</button>
                     </div>
-                  <div class="flex">
-                <img src="images/seat-green-filled.png" alt="">
-                <p class="text-green-500">Selected</p>
-              </div>
-              </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">A1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">A2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">A3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">A4</button>
+                    </div>
+                    <div>
+                      <button class="btn">B</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">B1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">B2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">B3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">B4</button>
+                    </div>
+                    <div>
+                      <button class="btn">C</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">C1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">C2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">C3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">C4</button>
+                    </div>
+                    <div>
+                      <button class=" btn">D</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">D1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">D2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">D3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">D4</button>
+                    </div>
+                    <div>
+                      <button class=" btn">E</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">E1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">E2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">E3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">E4</button>
+                    </div>
+                    <div>
+                      <button class="btn">F</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">F1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">F2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">F3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">F4</button>
+                    </div>
+                    <div>
+                      <button class="btn">G</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">G1</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">G2</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">G3</button>
+                    </div>
+                    <div class="add-btn">
+                      <button class="btn bg-slate-200 px-6">G4</button>
+                    </div>
+                </div>
+                    
+            </div>
+  
+  
+            <div class="bg-slate-200">
+              <div>
+                <div class="p-8">
+                  <h1>Select Your Seat</h1>
+                <div class="overflow-x-auto">
+                <!-- <table class="table"> -->
+                  <!-- head -->
+                  <!-- <thead> -->
+                    <!-- <tr> -->
+                      <!-- <th class="text-black">Set <span>0</span></th> -->
+                      <!-- <th class="text-black">Class</th> -->
+                      <!-- <th class="text-black">Price</th> -->
+                    <!-- </tr> -->
+                  <!-- </thead> -->
+                <!-- </table> -->
 
-              <div class="grid grid-cols-5 gap-x-10 gap-y-8 mt-8">
-                <button class="btn">A</button>
-                <button class="btn bg-slate-200 px-6">A1</button>
-                <button class="btn bg-slate-200 px-6">A2</button>
-                <button class="btn bg-slate-200 px-6">A3</button>
-                <button class="btn bg-slate-200 px-6">A4</button>
-                <button class="btn px-6">B</button>
-                <button class="btn bg-slate-200">B1</button>
-                <button class="btn bg-slate-200">B2</button>
-                <button class="btn bg-slate-200">B3</button>
-                <button class="btn bg-slate-200">B4</button>
-                <button class="btn">C</button>
-                <button class="btn bg-slate-200 px-6">C1</button>
-                <button class="btn bg-slate-200 px-6">C2</button>
-                <button class="btn bg-slate-200 px-6">C3</button>
-                <button class="btn bg-slate-200 px-6">C4</button>
-                <button class="btn">D</button>
-                <button class="btn bg-slate-200 px-6">D1</button>
-                <button class="btn bg-slate-200 px-6">D2</button>
-                <button class="btn bg-slate-200 px-6">D3</button>
-                <button class="btn bg-slate-200 px-6">D4</button>
-                <button class="btn">E</button>
-                <button class="btn bg-slate-200 px-6">E1</button>
-                <button class="btn bg-slate-200 px-6">E2</button>
-                <button class="btn bg-slate-200 px-6">E3</button>
-                <button class="btn bg-slate-200 px-6">E4</button>
-                <button class="btn">F</button>
-                <button class="btn bg-slate-200 px-6">F1</button>
-                <button class="btn bg-slate-200 px-6">F2</button>
-                <button class="btn bg-slate-200 px-6">F3</button>
-                <button class="btn bg-slate-200 px-6">F4</button>
-                <button class="btn">G</button>
-                <button class="btn bg-slate-200 px-6">G1</button>
-                <button class="btn bg-slate-200 px-6">G2</button>
-                <button class="btn bg-slate-200 px-6">G3</button>
-                <button class="btn bg-slate-200 px-6">G4</button>
-                <button class="btn">H</button>
-                <button class="btn bg-slate-200 px-6">H1</button>
-                <button class="btn bg-slate-200 px-6">H2</button>
-                <button class="btn bg-slate-200 px-6">H3</button>
-                <button class="btn bg-slate-200 px-6">H4</button>
-                <button class="btn">I</button>
-                <button class="btn bg-slate-200 px-6">I1</button>
-                <button class="btn bg-slate-200 px-6">I2</button>
-                <button class="btn bg-slate-200 px-6">I3</button>
-                <button class="btn bg-slate-200 px-6">I4</button>
-                <button class="btn">J</button>
-                <button class="btn bg-slate-200 px-6">J1</button>
-                <button class="btn bg-slate-200 px-6">J2</button>
-                <button class="btn bg-slate-200 px-6">J3</button>
-                <button class="btn bg-slate-200 px-6">J4</button>
-              </div>
-                  
-          </div>
 
-
-          <div class="bg-slate-200">
-            <div>
-              <div class="p-8">
-                <h1>Select Your Seat</h1>
-              <div class="overflow-x-auto">
-              <table class="table">
-                <!-- head -->
-                <thead>
-                  <tr>
-                    <th class="text-black">Set</th>
-                    <th class="text-black">Class</th>
-                    <th class="text-black">Price</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <!-- row 1 -->
-                  <tr>
-                    <td>C2</td>
-                    <td>Economoy</td>
-                    <td>550</td>
-                  </tr>
-                  <!-- row 2 -->
-                  <tr>
-                    <td>C2</td>
-                    <td>Economoy</td>
-                    <td>550</td>
-                  </tr>
-                  <!-- row 3 -->
-                </tbody>
-              </table>
-              <div class="flex justify-between">
-                <p>Total Price</p>
-                <p>BDT 1100</p>
-              </div>
-              </div>
-              <label class=" mt-2 input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                <span><button class="bg-green-400 p-2 rounded">Apply</button></span>
-              </label>
-              <div class="mt-2 flex justify-between">
-                <p>Grand Total</p>
-                <p>BDT 1100</p>
-              </div> 
-    
-              <div class="mt-6">
-                <p>Passanger Name</p>
-              <label class=" mt-2 input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                </label>
-    
-                <p>Phone Number</p>
-              <label class=" mt-2 input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-              </label>
-    
-              <p>Email Id</p>
-              <label class=" mt-2 input input-bordered flex items-center gap-2">
-                <input type="text" class="grow" placeholder="Search" />
-                 </label>
-    
-                  <button class="btn btn-wide mt-2 text-center">Wide</button>
-              </div>
-              
-              </div>
-              </div>
-    
-    
+                <div class="flex justify-between">
+                  <div>Seat</div>
+                  <div>Class</div>
+                  <div>Price</div>
                 </div>
 
-          </div>
+                <!-- <div class="flex justify-between">
+                  <div></div>
+                  <div>Economy</div>
+                  <div>550</div>
+                </div> -->
+                <div id="selected-seat-container"></div>
 
-          <!-- Select your set -->
-          
+                <div class="flex justify-between">
+                  <h2>Total Price</h2>
+                  <h2>BDT: <span id="price">0</span></h2>
+                </div>
+                </div>
+                <label class=" mt-2 input input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="Search" />
+                  <span><button class="bg-green-400 p-2 rounded">Apply</button></span>
+                </label>
+                <div class="mt-2 flex justify-between">
+                  <h2>Grand Total</h2>
+                  <h2>BDT: <span id="grand">0</span></h2>
+                </div> 
+      
+                <div class="mt-6">
+                  <p>Passenger Name</p>
+                <label class=" mt-2 input input-bordered flex items-center gap-2">
+                  <input type="text" class="grow" placeholder="Search" />
+                  </label>
+      
+                  <p>Phone Number</p>
+                <label class=" mt-2 input input-bordered flex items-center gap-2">
+                  <input type="number" class="grow" placeholder="Search" />
+                </label>
+      
+                <p>Email Id</p>
+                <label class=" mt-2 input input-bordered flex items-center gap-2">
+                  <input type="email" class="grow" placeholder="Search" />
+                   </label>
+      
+                    <button class="btn btn-wide mt-2 text-center bg-green-400">Next</button>
+                </div>             
+                </div>
+                </div>
+                </div>
+            </div>
+          </div>
       </section>
           
     </main>
@@ -308,7 +355,7 @@
               <p>P ticket is a digital platform <br> in your daily commoting batter</p>
             </div>
             <div>
-              <p>Downlod our app</p>
+              <p>Download our app</p>
               <img class="w-30 h-10" src="images/android.png" alt="">
             </div>
           </div>
@@ -327,5 +374,10 @@
          </div>
       </section>
     </footer>
+
+
+    <!-- added Js file -->
+    <script src="scripts/utility.js"></script>
+    <script src="scripts/bus.js"></script>
 </body>
 </html>
